@@ -9,8 +9,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-# Rename 'app' to 'application' for WSGI compatibility
-application = Flask(__name__)
+app = Flask(__name__)
 
 @application.route('/validate', methods=['GET'])
 def validate_phone_number():
