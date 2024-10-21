@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 app = Flask(__name__)
 
-@application.route('/validate', methods=['GET'])
+@app.route('/validate', methods=['GET'])
 def validate_phone_number():
     phone_number = request.args.get('number')
     
